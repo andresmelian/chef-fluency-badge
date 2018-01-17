@@ -3,3 +3,10 @@ file 'default www' do
      content 'HELLO WORLD'
 end
 
+webnodes = search('node', 'role:web')
+
+webnodes.each do |node|
+          puts node
+end
+
+
